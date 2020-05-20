@@ -1,10 +1,10 @@
 # [백준 11053] 가장 긴 증가하는 부분 수열
 
 n = int(input())
-sequence = input().split()
+sequence = list(map(int, input().split()))
 
 dp = [1]
-total_max = 1;
+total_max = 1
 for i in range(1, n):
     max_length = 0
     for j in range(0, i):
